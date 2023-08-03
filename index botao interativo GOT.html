@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Projeto HTML e CSS</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+
+        body {
+            font-family: 'Cambria';
+            background-color: black;
+            background-image: url(GOT\ 4.jpg);
+            background-position: center;
+            background-position-y: 111%;
+            background-repeat: no-repeat;
+            background-size: 1600px, 4000px;
+            margin: 0px auto;
+            padding: 5px;
+            width: 900px;
+            
+            }
+
+            .container {
+            
+            margin: 0px auto;
+            padding: 10px;
+            width: 800px;
+            text-align: center;
+            }
+
+            .menu {
+                position: absolute; top: 10px; width: 73%;
+            }
+            
+       .menu a {
+        color: red;
+        padding: 10px;
+        text-align: center;
+        }
+
+        .menu ul {
+            margin: 10px;
+            padding: 20px;
+            font-size: 35px;
+            position: relative;
+            left: -2%;
+        }
+        
+        .menu ul li {
+            display:inline;
+        }
+
+        .menu ul li a {
+            margin: 0 auto;
+        }
+
+        .menu li {
+            margin-top: 30px;
+            padding-right: 100px;
+            display: inline-block;
+            color: red;
+            font-size: 19px;
+            font-weight: bold;
+            text-align: right;
+        }
+
+        .menu li:hover {
+            background: white;
+            color: black;
+            -moz-box-shadow: 5 2px 2px 5 white;
+            -webkit-box-shadow: 0 3px 10px 0 yellow;
+            text-shadow: 0px 0px 5px black;
+            text-align: center;
+            }
+
+        .menu a {
+            color: white;
+        }
+            
+               
+        img {            
+           -webkit-mask-image: linear-gradient(to bottom, transparent 5%, white 40%);
+           background-image: url(Projeto\ Game\ of\ Thrones.jpg);
+           position: relative;
+           right: 17px;
+           
+            }
+
+        figcaption {
+            position: relative;
+            right: 16px;
+            font-size: 18px;
+        }
+
+        h1 {
+            color: white;
+            font-family: 'Cambria';
+            font-size: 50px;
+            margin-bottom: 50px;
+            text-shadow: 0.1em 0.1em 0.3em white;
+            position: relative;
+            left: -5%;
+        }
+
+              
+
+        p {
+            color: white;
+            font-size: 22px;
+            margin-bottom: 14px;
+            position: relative;
+            left: -1%;
+        }
+
+        #myElement {
+            padding: 2px 2px;
+            background-color: black;
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 10px;
+            transition: background-color 0.3s ease;
+            margin-top: 13px;
+            position: relative;
+            left: -0%;
+            display: none;
+            
+  }
+  
+            
+        
+
+        footer {
+            position: relative;
+            left: 24%;
+
+        }
+
+       
+
+       
+       
+    </style>
+
+</head>
+
+<body>
+
+    <div class="menu">
+        
+    <nav>
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Sobre Game of Thrones</a></li>
+            <li><a href="#">Personagens</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+</div>
+        <br>   
+
+    <div class="container">
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+<br>
+
+<main>
+    <h1>Projeto Dracarys<img src="fogo.gif" width="72" height="62" style="right: -37px; top: -18px;"></h1>
+</main>
+<br>
+
+    <br>
+    <img src="Projeto Game of Thrones.jpg" width="550" height="550" alt="Daenerys Targaryen, Arya Stark, Brienne de Tarth, Jhon Snow e Sor Jorah Mormont.">
+    <figcaption src="Projeto Game of Thrones.jpg"><font color="white"><i>"Daenerys Targaryen, Arya Stark, Brienne de Tarth, Jhon Snow e Sor Jorah Mormont.</i></font></figcaption>
+    <br>
+    
+    <br>
+    <br>
+
+    <p>Clique no botão abaixo para conhecer os personagens em destaque:</p>
+
+    <div id="myElement"><video src="Daenerys Targaryen - The Queen.mp4" type="video/mp4"
+        controls poster="dany 8.jpg"
+        width="1100"></div>
+
+<button onclick="toggleVisibility()"><img src="GOT 6.jpg" width="90" height="80" alt="GOT 6.jpg"></button>
+
+
+    <br>
+    <br>
+    <br>
+    </div>
+<br>
+
+
+
+
+<script>
+  function toggleVisibility() {
+    var element = document.getElementById("myElement");
+    if (element.style.display === "none") {
+      element.style.display = "block";
+    } else {
+      element.style.display = "none";
+    }
+  }
+</script>
+
+  
+        <footer>
+        <p><i>&copy; 2023 Fanpage GOT. Todos os direitos reservados.</i></p>
+    </footer>
+
+   
+</body>
+</html>
